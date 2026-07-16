@@ -1,22 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<FLOW VERSION="3.0" CLEANUP="true">
-  <COMMENT>Convert a JSON string to an XML string. Hand-authored for git sync test.</COMMENT>
-  <INVOKE SERVICE="pub.json:jsonStringToDocument" VALIDATE-IN="$none" VALIDATE-OUT="$none" DISABLED="false">
-    <COMMENT>Parse the JSON input into a document</COMMENT>
-    <MAP MODE="INPUT">
-      <MAPCOPY FROM="/jsonString;1;0" TO="/jsonString;1;0"></MAPCOPY>
-    </MAP>
-    <MAP MODE="OUTPUT"></MAP>
-  </INVOKE>
-  <INVOKE SERVICE="pub.xml:documentToXMLString" VALIDATE-IN="$none" VALIDATE-OUT="$none" DISABLED="false">
-    <COMMENT>Serialize the parsed document as XML</COMMENT>
-    <MAP MODE="INPUT">
-      <MAPCOPY FROM="/document;2;0" TO="/document;2;0"></MAPCOPY>
-      <MAPSET FIELD="/addHeader;1;0">true</MAPSET>
-    </MAP>
-    <MAP MODE="OUTPUT">
-      <MAPCOPY FROM="/xmldata;1;0" TO="/xmldata;1;0"></MAPCOPY>
-    </MAP>
-  </INVOKE>
+<FLOW VERSION="3.2" CLEANUP="false">
+  <COMMENT></COMMENT>
+
+  <!-- nodes -->
+
+<MAP NAME="TRANSFORM" TIMEOUT="" MODE="STANDALONE">
+
+  <!-- nodes -->
+
+<MAPCOPY FROM="/jsonString;1;0" TO="/xmldata;1;0">
+</MAPCOPY>
+</MAP>
 </FLOW>

@@ -15,7 +15,7 @@
 
   <!-- nodes -->
 
-<MAPCOPY FROM="/ediString;1;0" TO="/edidata;1;0">
+<MAPCOPY FROM="/ediString;1;0" TO="/edidata;9;0">
 </MAPCOPY>
 </MAP>
 
@@ -34,7 +34,7 @@
 
   <!-- nodes -->
 
-<MAPCOPY FROM="/values;2;0" TO="/document;2;0">
+<MAPCOPY FROM="/EDIValues;2;0" TO="/document;2;0">
 </MAPCOPY>
 </MAP>
 

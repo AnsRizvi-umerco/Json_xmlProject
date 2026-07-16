@@ -5,24 +5,31 @@
 
   <!-- nodes -->
 
-<INVOKE SERVICE="pub.json:jsonStringToDocument" VALIDATE-IN="$none" VALIDATE-OUT="$none" DISABLED="false">
+<INVOKE NAME="JSON" SERVICE="pub.json:jsonStringToDocument">
   <COMMENT></COMMENT>
-  <MAP MODE="INPUT">
-    <MAPCOPY FROM="/jsonString;1;0" TO="/jsonString;1;0">
-    </MAPCOPY>
-  </MAP>
-  <MAP MODE="OUTPUT">
-  </MAP>
+
+  <!-- nodes -->
+
+<MAP MODE="INPUT">
+  <COMMENT></COMMENT>
+</MAP>
+
+<MAP MODE="OUTPUT">
+  <COMMENT></COMMENT>
+</MAP>
 </INVOKE>
-<INVOKE SERVICE="pub.xml:documentToXMLString" VALIDATE-IN="$none" VALIDATE-OUT="$none" DISABLED="false">
+
+<INVOKE NAME="XML" SERVICE="pub.xml:documentToXMLString">
   <COMMENT></COMMENT>
-  <MAP MODE="INPUT">
-    <MAPCOPY FROM="/document;2;0" TO="/document;2;0">
-    </MAPCOPY>
-  </MAP>
-  <MAP MODE="OUTPUT">
-    <MAPCOPY FROM="/xmldata;1;0" TO="/xmldata;1;0">
-    </MAPCOPY>
-  </MAP>
+
+  <!-- nodes -->
+
+<MAP MODE="INPUT">
+  <COMMENT></COMMENT>
+</MAP>
+
+<MAP MODE="OUTPUT">
+  <COMMENT></COMMENT>
+</MAP>
 </INVOKE>
 </FLOW>

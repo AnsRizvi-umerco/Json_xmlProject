@@ -86,20 +86,44 @@
     <value name="description"></value>
     <record name="stepNodeHints" javaclass="com.wm.util.Values">
       <record name="/0" javaclass="com.wm.util.Values">
+        <null name="name"/>
         <value name="itemType">SERVICES</value>
-        <value name="name">jsonStringToDocument</value>
+        <record name="serviceInfo" javaclass="com.wm.util.Values">
+          <value name="groupDisplayName">JSON</value>
+          <value name="groupName">json</value>
+          <null name="services"/>
+        </record>
+        <record name="serviceName" javaclass="com.wm.util.Values">
+          <value name="displayName">jsonStringToDocument</value>
+          <value name="serviceName">pub.json:jsonStringToDocument</value>
+          <value name="transformerSupport">false</value>
+        </record>
         <number name="ui_step_index" type="Long">1</number>
         <value name="nodePathNew">0</value>
         <number name="nodeIndex" type="Long">0</number>
         <number name="lineNumberForDebug" type="Long">1</number>
+        <null name="mapSet"/>
+        <null name="outputMapSet"/>
       </record>
       <record name="/1" javaclass="com.wm.util.Values">
+        <null name="name"/>
         <value name="itemType">SERVICES</value>
-        <value name="name">documentToXMLString</value>
+        <record name="serviceInfo" javaclass="com.wm.util.Values">
+          <value name="groupDisplayName">XML</value>
+          <value name="groupName">xml</value>
+          <null name="services"/>
+        </record>
+        <record name="serviceName" javaclass="com.wm.util.Values">
+          <value name="displayName">documentToXMLString</value>
+          <value name="serviceName">pub.xml:documentToXMLString</value>
+          <value name="transformerSupport">false</value>
+        </record>
         <number name="ui_step_index" type="Long">2</number>
         <value name="nodePathNew">1</value>
         <number name="nodeIndex" type="Long">1</number>
         <number name="lineNumberForDebug" type="Long">2</number>
+        <null name="mapSet"/>
+        <null name="outputMapSet"/>
       </record>
     </record>
   </record>

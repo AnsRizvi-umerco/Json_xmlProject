@@ -7,27 +7,6 @@
 
 <INVOKE NAME="EDI" SERVICE="wm.b2b.edi:convertToValues">
   <COMMENT></COMMENT>
-
-  <!-- nodes -->
-
-<MAP MODE="INPUT">
-  <COMMENT></COMMENT>
-
-  <!-- nodes -->
-
-<MAPSET NAME="Setter" OVERWRITE="true" VARIABLES="false" GLOBALVARIABLES="false" FIELD="/schema;1;0">
-  <DATA ENCODING="XMLValues" I18N="true">
-
-<Values version="2.0">
-  <value name="xml">"EDIFFSchema.X12.V4010:T850"</value>
-</Values>
-</DATA>
-</MAPSET>
-</MAP>
-
-<MAP MODE="OUTPUT">
-  <COMMENT></COMMENT>
-</MAP>
 </INVOKE>
 
 <MAP NAME="TRANSFORM" TIMEOUT="" MODE="STANDALONE">

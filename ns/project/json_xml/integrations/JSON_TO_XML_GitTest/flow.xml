@@ -5,11 +5,24 @@
 
   <!-- nodes -->
 
-<MAP NAME="TRANSFORM" TIMEOUT="" MODE="STANDALONE">
-
-  <!-- nodes -->
-
-<MAPCOPY FROM="/jsonString;1;0" TO="/xmldata;1;0">
-</MAPCOPY>
-</MAP>
+<INVOKE SERVICE="pub.json:jsonStringToDocument" VALIDATE-IN="$none" VALIDATE-OUT="$none" DISABLED="false">
+  <COMMENT></COMMENT>
+  <MAP MODE="INPUT">
+    <MAPCOPY FROM="/jsonString;1;0" TO="/jsonString;1;0">
+    </MAPCOPY>
+  </MAP>
+  <MAP MODE="OUTPUT">
+  </MAP>
+</INVOKE>
+<INVOKE SERVICE="pub.xml:documentToXMLString" VALIDATE-IN="$none" VALIDATE-OUT="$none" DISABLED="false">
+  <COMMENT></COMMENT>
+  <MAP MODE="INPUT">
+    <MAPCOPY FROM="/document;2;0" TO="/document;2;0">
+    </MAPCOPY>
+  </MAP>
+  <MAP MODE="OUTPUT">
+    <MAPCOPY FROM="/xmldata;1;0" TO="/xmldata;1;0">
+    </MAPCOPY>
+  </MAP>
+</INVOKE>
 </FLOW>

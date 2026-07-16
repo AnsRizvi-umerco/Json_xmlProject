@@ -7,14 +7,3 @@ packages:
   gitUrl: https://github.com/AnsRizvi-umerco
   gitUsername: ShabeeHaider-umerco
   gitBranch: main
-- name: WmB2BProvider
-  version: 12.0.0.0.80
-  wpmServer: https://packages.webmethods.io
-  wpmRegistry: supported
-services:
-- serviceName: project.json_xml.integrations:EDI850_TO_XML_GitTest
-  packages:
-  - name: Json_xmlProject
-    version: "1.0"
-  - name: WmB2BProvider
-    version: 12.0.0.0.80

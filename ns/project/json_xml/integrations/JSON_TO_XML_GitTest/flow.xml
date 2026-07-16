@@ -12,6 +12,7 @@
 
 <MAP MODE="INPUT">
   <COMMENT></COMMENT>
+  <MAPCOPY FROM="jsonString" TO="jsonString"/>
 </MAP>
 
 <MAP MODE="OUTPUT">
@@ -26,10 +27,13 @@
 
 <MAP MODE="INPUT">
   <COMMENT></COMMENT>
+  <MAPCOPY FROM="document" TO="document"/>
+  <MAPSET FIELD="docTypeName">project.json_xml.documenttypes:input2</MAPSET>
 </MAP>
 
 <MAP MODE="OUTPUT">
   <COMMENT></COMMENT>
+  <MAPCOPY FROM="xmldata" TO="xmldata"/>
 </MAP>
 </INVOKE>
 </FLOW>

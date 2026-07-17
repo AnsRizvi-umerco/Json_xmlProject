@@ -8,13 +8,36 @@ packages:
   gitUsername: ShabeeHaider-umerco
   gitBranch: main
 - name: WmSlackProvider
+  version: 12.0.0.0.6
   wpmServer: https://packages.webmethods.io
   wpmRegistry: supported
 services:
+- serviceName: project.json_xml.WmSlackProvider.com_webmethods_cloudstreams_slack_v2.connections:SlackEDIAlerts
+  packages:
+  - name: Json_xmlProject
+    version: "1.0"
+  - name: WmSlackProvider
+    version: 12.0.0.0.6
+- serviceName: project.json_xml.integrations:EDI850_TO_XML_GitTest
+  packages:
+  - name: Json_xmlProject
+    version: "1.0"
+  - name: WmSlackProvider
+    version: 12.0.0.0.6
+- serviceName: pub.string:tokenize
+  packages:
+  - name: WmPublic
+    version: 12.1.0.0.875
+- serviceName: wm.com_webmethods_cloudstreams_slack_v2.operations:ChatPostMessage
+  packages:
+  - name: WmSlackProvider
+    version: 12.0.0.0.6
 - serviceName: project.json_xml.integrations:JSON_TO_XML_GitTest
   packages:
   - name: Json_xmlProject
     version: "1.0"
+  - name: WmSlackProvider
+    version: 12.0.0.0.6
 - serviceName: pub.json:jsonStringToDocument
   packages:
   - name: WmPublic

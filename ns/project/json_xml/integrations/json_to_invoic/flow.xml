@@ -3157,8 +3157,8 @@
 
 <MAP MODE="INPUT">
   <COMMENT></COMMENT>
-  <MAPCOPY FROM="/segCount;1;0" TO="/value1;1;0"/>
-<MAPSET NAME="Setter" OVERWRITE="true" VARIABLES="false" GLOBALVARIABLES="false" FIELD="/value2">
+  <MAPCOPY FROM="/segCount;1;0" TO="/num1;1;0"/>
+<MAPSET NAME="Setter" OVERWRITE="true" VARIABLES="false" GLOBALVARIABLES="false" FIELD="/num2">
   <DATA ENCODING="XMLValues" I18N="true">
 
 <Values version="2.0">

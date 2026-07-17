@@ -96,9 +96,8 @@
   <value name="retry_max">0</value>
   <value name="retry_interval">0</value>
   <record name="node_hints" javaclass="com.wm.util.Values">
-    <value name="createdBy">ans.rizvi@umerco.com</value>
-    <value name="createdDate">1784295000000</value>
-    <value name="lastModifiedDate">1784295000000</value>
+    <value name="lastModifiedBy">ans.rizvi@umerco.com</value>
+    <value name="lastModifiedDate">1784295255693</value>
     <value name="displayName">EDI850_TO_XML_GitTest</value>
     <value name="description"></value>
     <record name="stepNodeHints" javaclass="com.wm.util.Values">
@@ -106,14 +105,14 @@
         <null name="name"/>
         <value name="itemType">SERVICES</value>
         <record name="serviceInfo" javaclass="com.wm.util.Values">
-          <value name="groupDisplayName">EDI</value>
-          <value name="groupName">b2b.edi</value>
+          <value name="groupDisplayName">String</value>
+          <value name="groupName">string</value>
           <null name="services"/>
         </record>
         <record name="serviceName" javaclass="com.wm.util.Values">
-          <value name="displayName">convertToValues</value>
-          <value name="serviceName">wm.b2b.edi:convertToValues</value>
-          <value name="transformerSupport">false</value>
+          <value name="displayName">tokenize</value>
+          <value name="serviceName">pub.string:tokenize</value>
+          <value name="transformerSupport">true</value>
         </record>
         <number name="ui_step_index" type="Long">1</number>
         <value name="nodePathNew">0</value>
@@ -121,6 +120,8 @@
         <number name="lineNumberForDebug" type="Long">1</number>
         <null name="mapSet"/>
         <null name="outputMapSet"/>
+        <Boolean name="hasBreakPoint">false</Boolean>
+        <Boolean name="xmlMapsetSupported">true</Boolean>
       </record>
       <record name="/1" javaclass="com.wm.util.Values">
         <value name="itemType">CONTROLS</value>
@@ -139,27 +140,6 @@
         </array>
         <array name="lookupTransformer" type="object" depth="1" javaclass="java.lang.Object">
         </array>
-      </record>
-      <null name="/1/0"/>
-      <record name="/2" javaclass="com.wm.util.Values">
-        <null name="name"/>
-        <value name="itemType">SERVICES</value>
-        <record name="serviceInfo" javaclass="com.wm.util.Values">
-          <value name="groupDisplayName">XML</value>
-          <value name="groupName">xml</value>
-          <null name="services"/>
-        </record>
-        <record name="serviceName" javaclass="com.wm.util.Values">
-          <value name="displayName">documentToXMLString</value>
-          <value name="serviceName">pub.xml:documentToXMLString</value>
-          <value name="transformerSupport">false</value>
-        </record>
-        <number name="ui_step_index" type="Long">3</number>
-        <value name="nodePathNew">2</value>
-        <number name="nodeIndex" type="Long">2</number>
-        <number name="lineNumberForDebug" type="Long">3</number>
-        <null name="mapSet"/>
-        <null name="outputMapSet"/>
       </record>
     </record>
   </record>

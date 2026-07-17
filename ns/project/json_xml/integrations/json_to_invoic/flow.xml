@@ -6298,7 +6298,7 @@
   <!-- nodes -->
 
 <MAPCOPY FROM="/segCount;1;0" TO="/num1;1;0"/>
-<MAPSET NAME="Setter" OVERWRITE="true" VARIABLES="false" GLOBALVARIABLES="false" FIELD="/num2">
+<MAPSET NAME="Setter" OVERWRITE="true" VARIABLES="false" GLOBALVARIABLES="false" FIELD="/num2;1;0">
   <DATA ENCODING="XMLValues" I18N="true">
 
 <Values version="2.0">
@@ -7321,7 +7321,7 @@
   <!-- nodes -->
 
 <MAPCOPY FROM="/toList;1;0" TO="/elementList;1;0"/>
-<MAPSET NAME="Setter" OVERWRITE="true" VARIABLES="false" GLOBALVARIABLES="false" FIELD="/separator">
+<MAPSET NAME="Setter" OVERWRITE="true" VARIABLES="false" GLOBALVARIABLES="false" FIELD="/separator;1;0">
   <DATA ENCODING="XMLValues" I18N="true">
 
 <Values version="2.0">

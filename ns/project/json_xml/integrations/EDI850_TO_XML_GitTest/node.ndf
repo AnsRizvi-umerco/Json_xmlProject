@@ -97,7 +97,7 @@
   <value name="retry_interval">0</value>
   <record name="node_hints" javaclass="com.wm.util.Values">
     <value name="lastModifiedBy">ans.rizvi@umerco.com</value>
-    <value name="lastModifiedDate">1784299379214</value>
+    <value name="lastModifiedDate">1784300150452</value>
     <value name="displayName">EDI850_TO_XML_GitTest</value>
     <value name="description"></value>
     <array name="appList" type="record" depth="1">
@@ -240,6 +240,13 @@
         <value name="allowCustomOperations">true</value>
         <value name="appType">predefined</value>
         <Boolean name="hasAccount">true</Boolean>
+        <record name="connection" javaclass="com.wm.util.Values">
+          <value name="connectionName">SlackEDIAlerts</value>
+          <value name="connectionType">sagcloud</value>
+          <null name="description"/>
+        </record>
+        <value name="connectionNSName">project.json_xml.WmSlackProvider.com_webmethods_cloudstreams_slack_v2.connections:SlackEDIAlerts</value>
+        <value name="connectionType">sagcloud</value>
         <value name="type">REST</value>
         <value name="version">2.1</value>
         <value name="packageName">WmSlackProvider</value>
@@ -268,6 +275,7 @@
         </array>
         <array name="outputMap" type="object" depth="1" javaclass="java.lang.Object">
         </array>
+        <Boolean name="accountReferenceResolved">true</Boolean>
       </record>
     </record>
   </record>

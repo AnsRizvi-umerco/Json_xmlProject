@@ -97,7 +97,7 @@
   <value name="retry_interval">0</value>
   <record name="node_hints" javaclass="com.wm.util.Values">
     <value name="lastModifiedBy">ans.rizvi@umerco.com</value>
-    <value name="lastModifiedDate">1784300150452</value>
+    <value name="lastModifiedDate">1784300638031</value>
     <value name="displayName">EDI850_TO_XML_GitTest</value>
     <value name="description"></value>
     <array name="appList" type="record" depth="1">
@@ -122,9 +122,9 @@
           <value name="transformerSupport">true</value>
         </record>
         <number name="ui_step_index" type="Long">1</number>
-        <value name="nodePathNew">0</value>
+        <value name="nodePathNew">0.0</value>
         <number name="nodeIndex" type="Long">0</number>
-        <number name="lineNumberForDebug" type="Long">1</number>
+        <number name="lineNumberForDebug" type="Long">2</number>
         <null name="mapSet"/>
         <null name="outputMapSet"/>
         <Boolean name="xmlMapsetSupported">true</Boolean>
@@ -136,9 +136,9 @@
         <value name="itemType">CONTROLS</value>
         <value name="name">TRANSFORM</value>
         <number name="ui_step_index" type="Long">2</number>
-        <value name="nodePathNew">1</value>
+        <value name="nodePathNew">0.1</value>
         <number name="nodeIndex" type="Long">1</number>
-        <number name="lineNumberForDebug" type="Long">2</number>
+        <number name="lineNumberForDebug" type="Long">3</number>
         <array name="map" type="object" depth="1" javaclass="java.lang.Object">
         </array>
         <array name="mapSet" type="object" depth="1" javaclass="java.lang.Object">
@@ -172,9 +172,9 @@
           <Boolean name="isLink">false</Boolean>
           <null name="wrapper_type"/>
         </record>
-        <value name="nodePathNew">2</value>
+        <value name="nodePathNew">0.2</value>
         <number name="nodeIndex" type="Long">2</number>
-        <number name="lineNumberForDebug" type="Long">3</number>
+        <number name="lineNumberForDebug" type="Long">4</number>
         <value name="nodePathForDebug">2</value>
         <Boolean name="hasBreakPoint">false</Boolean>
       </record>
@@ -182,9 +182,9 @@
         <value name="itemType">CONTROLS</value>
         <value name="name">TRANSFORM</value>
         <number name="ui_step_index" type="Long">4</number>
-        <value name="nodePathNew">2.0</value>
+        <value name="nodePathNew">0.2.0</value>
         <number name="nodeIndex" type="Long">0</number>
-        <number name="lineNumberForDebug" type="Long">4</number>
+        <number name="lineNumberForDebug" type="Long">5</number>
         <array name="map" type="object" depth="1" javaclass="java.lang.Object">
         </array>
         <array name="mapSet" type="object" depth="1" javaclass="java.lang.Object">
@@ -203,9 +203,9 @@
         <value name="itemType">CONTROLS</value>
         <value name="name">TRANSFORM</value>
         <number name="ui_step_index" type="Long">5</number>
-        <value name="nodePathNew">3</value>
+        <value name="nodePathNew">0.3</value>
         <number name="nodeIndex" type="Long">3</number>
-        <number name="lineNumberForDebug" type="Long">5</number>
+        <number name="lineNumberForDebug" type="Long">6</number>
         <array name="map" type="object" depth="1" javaclass="java.lang.Object">
         </array>
         <array name="mapSet" type="object" depth="1" javaclass="java.lang.Object">
@@ -269,13 +269,18 @@
         </array>
         <array name="lookupTransformer" type="object" depth="1" javaclass="java.lang.Object">
         </array>
-        <array name="mapSet" type="object" depth="1" javaclass="java.lang.Object">
-        </array>
+        <null name="mapSet"/>
         <array name="inputMap" type="object" depth="1" javaclass="java.lang.Object">
         </array>
         <array name="outputMap" type="object" depth="1" javaclass="java.lang.Object">
         </array>
         <Boolean name="accountReferenceResolved">true</Boolean>
+        <number name="ui_step_index" type="Long">8</number>
+        <value name="nodePathNew">1.0</value>
+        <number name="nodeIndex" type="Long">0</number>
+        <number name="lineNumberForDebug" type="Long">8</number>
+        <Boolean name="xmlMapsetSupported">true</Boolean>
+        <null name="outputMapSet"/>
       </record>
     </record>
   </record>

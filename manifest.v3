@@ -11,18 +11,19 @@
   <null name="replication_services"/>
   <record name="requires" javaclass="com.wm.util.Values">
     <value name="WmSlackProvider">12.0.0.0.6</value>
+    <value name="WmJDBCAdapter">10.3.0.0.34</value>
   </record>
   <null name="lazy_load_node_types"/>
   <null name="listACL"/>
   <value name="webappLoad">yes</value>
   <value name="reloadWithDependentPackage">yes</value>
-  <value name="build">20</value>
+  <value name="build">21</value>
   <null name="description"/>
   <value name="created_date">14-07-2026 16:12:17 GMT</value>
   <null name="extendedProperties"/>
   <null name="target_server_version"/>
   <value name="isProjectPackage">true</value>
-  <value name="lastUpdated">2026-07-17T15:26:13.222777489Z</value>
+  <value name="lastUpdated">2026-07-17T16:45:58.411435021Z</value>
   <value name="wmProjectId">fl2b01c71026084f78b7a6271b1318ee81</value>
   <value name="creator">Ans Rizvi</value>
 </Values>

@@ -11,6 +11,10 @@ packages:
   version: 12.0.0.0.6
   wpmServer: https://packages.webmethods.io
   wpmRegistry: supported
+- name: WmJDBCAdapter
+  wpmServer: https://packages.webmethods.io
+  wpmRegistry: licensed
+  wpmVersion: latest
 services:
 - serviceName: project.json_xml.WmSlackProvider.com_webmethods_cloudstreams_slack_v2.connections:SlackEDIAlerts
   packages:

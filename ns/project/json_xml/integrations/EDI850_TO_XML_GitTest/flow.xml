@@ -276,6 +276,31 @@
 </MAPSET>
 </MAP>
 
+<BRANCH LABELEXPRESSIONS="true">
+  <COMMENT></COMMENT>
+
+  <!-- nodes -->
+
+<SEQUENCE NAME="edidata = /^(?=.*GS\*)(?=.*ST\*850)(?=.*BEG\*)(?=.*PO1\*)(?=.*CTT\*)(?=.*SE\*)(?=.*GE\*)ISA\*.*IEA\*[^~]*~?$/" EXIT-ON="FAILURE">
+  <COMMENT></COMMENT>
+
+  <!-- nodes -->
+
+<SEQUENCE NAME="NEW" EXIT-ON="FAILURE">
+</SEQUENCE>
+</SEQUENCE>
+
+<SEQUENCE NAME="$default" EXIT-ON="FAILURE">
+  <COMMENT></COMMENT>
+
+  <!-- nodes -->
+
+<EXIT NAME="EXIT" FROM="$parent" SIGNAL="FAILURE" FAILURE-MESSAGE="Invalid or incomplete EDI 850 document: required segments missing. Input: %edidata%">
+  <COMMENT></COMMENT>
+</EXIT>
+</SEQUENCE>
+</BRANCH>
+
 <LOOP NAME="REPEATINPUTOUTPUT" IN-ARRAY="/valueList" OUT-ARRAY="/valueList"  MAX-THREADS="1"  PARALLEL-ERROR-HANDLING="reportError">
   <COMMENT></COMMENT>
 

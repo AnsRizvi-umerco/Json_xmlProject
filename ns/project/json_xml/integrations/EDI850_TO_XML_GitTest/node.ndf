@@ -97,7 +97,7 @@
   <value name="retry_interval">0</value>
   <record name="node_hints" javaclass="com.wm.util.Values">
     <value name="lastModifiedBy">ans.rizvi@umerco.com</value>
-    <value name="lastModifiedDate">1784300638031</value>
+    <value name="lastModifiedDate">1784301972849</value>
     <value name="displayName">EDI850_TO_XML_GitTest</value>
     <value name="description"></value>
     <array name="appList" type="record" depth="1">
@@ -154,6 +154,23 @@
       </record>
       <null name="/0/1/0"/>
       <record name="/0/2" javaclass="com.wm.util.Values">
+        <value name="name">BRANCH</value>
+        <value name="itemType">CONTROLS</value>
+      </record>
+      <record name="/0/2/0" javaclass="com.wm.util.Values">
+        <value name="name">EXPRESSION</value>
+        <value name="itemType">CONTROLS</value>
+      </record>
+      <null name="/0/2/0/0"/>
+      <record name="/0/2/1" javaclass="com.wm.util.Values">
+        <value name="name">EXPRESSION</value>
+        <value name="itemType">CONTROLS</value>
+      </record>
+      <record name="/0/2/1/0" javaclass="com.wm.util.Values">
+        <value name="name">EXIT</value>
+        <value name="itemType">CONTROLS</value>
+      </record>
+      <record name="/0/3" javaclass="com.wm.util.Values">
         <value name="name">REPEATINPUTOUTPUT</value>
         <value name="itemType">CONTROLS</value>
         <record name="in_array" javaclass="com.wm.util.Values">
@@ -178,7 +195,7 @@
         <value name="nodePathForDebug">2</value>
         <Boolean name="hasBreakPoint">false</Boolean>
       </record>
-      <record name="/0/2/0" javaclass="com.wm.util.Values">
+      <record name="/0/3/0" javaclass="com.wm.util.Values">
         <value name="itemType">CONTROLS</value>
         <value name="name">TRANSFORM</value>
         <number name="ui_step_index" type="Long">4</number>
@@ -198,8 +215,8 @@
         <value name="nodePathForDebug">2.0</value>
         <Boolean name="hasBreakPoint">false</Boolean>
       </record>
-      <null name="/0/2/0/0"/>
-      <record name="/0/3" javaclass="com.wm.util.Values">
+      <null name="/0/3/0/0"/>
+      <record name="/0/4" javaclass="com.wm.util.Values">
         <value name="itemType">CONTROLS</value>
         <value name="name">TRANSFORM</value>
         <number name="ui_step_index" type="Long">5</number>
@@ -219,7 +236,7 @@
         <value name="nodePathForDebug">3</value>
         <Boolean name="hasBreakPoint">false</Boolean>
       </record>
-      <null name="/0/3/0"/>
+      <null name="/0/4/0"/>
       <null name="/1"/>
       <record name="/1/0" javaclass="com.wm.util.Values">
         <value name="name">Slack®</value>

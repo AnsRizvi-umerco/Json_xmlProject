@@ -97,11 +97,18 @@
   <value name="retry_interval">0</value>
   <record name="node_hints" javaclass="com.wm.util.Values">
     <value name="lastModifiedBy">ans.rizvi@umerco.com</value>
-    <value name="lastModifiedDate">1784296602666</value>
+    <value name="lastModifiedDate">1784299379214</value>
     <value name="displayName">EDI850_TO_XML_GitTest</value>
     <value name="description"></value>
+    <array name="appList" type="record" depth="1">
+      <record javaclass="com.wm.util.Values">
+        <value name="providerName">WmSlackProvider</value>
+        <value name="id">com.webmethods.cloudstreams.slack_v2</value>
+      </record>
+    </array>
     <record name="stepNodeHints" javaclass="com.wm.util.Values">
-      <record name="/0" javaclass="com.wm.util.Values">
+      <null name="/0"/>
+      <record name="/0/0" javaclass="com.wm.util.Values">
         <null name="name"/>
         <value name="itemType">SERVICES</value>
         <record name="serviceInfo" javaclass="com.wm.util.Values">
@@ -120,10 +127,12 @@
         <number name="lineNumberForDebug" type="Long">1</number>
         <null name="mapSet"/>
         <null name="outputMapSet"/>
-        <Boolean name="hasBreakPoint">false</Boolean>
         <Boolean name="xmlMapsetSupported">true</Boolean>
+        <Boolean name="serviceReferenceResolved">true</Boolean>
+        <value name="nodePathForDebug">0</value>
+        <Boolean name="hasBreakPoint">false</Boolean>
       </record>
-      <record name="/1" javaclass="com.wm.util.Values">
+      <record name="/0/1" javaclass="com.wm.util.Values">
         <value name="itemType">CONTROLS</value>
         <value name="name">TRANSFORM</value>
         <number name="ui_step_index" type="Long">2</number>
@@ -140,9 +149,11 @@
         </array>
         <array name="lookupTransformer" type="object" depth="1" javaclass="java.lang.Object">
         </array>
+        <value name="nodePathForDebug">1</value>
+        <Boolean name="hasBreakPoint">true</Boolean>
       </record>
-      <null name="/1/0"/>
-      <record name="/2" javaclass="com.wm.util.Values">
+      <null name="/0/1/0"/>
+      <record name="/0/2" javaclass="com.wm.util.Values">
         <value name="name">REPEATINPUTOUTPUT</value>
         <value name="itemType">CONTROLS</value>
         <record name="in_array" javaclass="com.wm.util.Values">
@@ -164,8 +175,10 @@
         <value name="nodePathNew">2</value>
         <number name="nodeIndex" type="Long">2</number>
         <number name="lineNumberForDebug" type="Long">3</number>
+        <value name="nodePathForDebug">2</value>
+        <Boolean name="hasBreakPoint">false</Boolean>
       </record>
-      <record name="/2/0" javaclass="com.wm.util.Values">
+      <record name="/0/2/0" javaclass="com.wm.util.Values">
         <value name="itemType">CONTROLS</value>
         <value name="name">TRANSFORM</value>
         <number name="ui_step_index" type="Long">4</number>
@@ -182,9 +195,11 @@
         </array>
         <array name="lookupTransformer" type="object" depth="1" javaclass="java.lang.Object">
         </array>
+        <value name="nodePathForDebug">2.0</value>
+        <Boolean name="hasBreakPoint">false</Boolean>
       </record>
-      <null name="/2/0/0"/>
-      <record name="/3" javaclass="com.wm.util.Values">
+      <null name="/0/2/0/0"/>
+      <record name="/0/3" javaclass="com.wm.util.Values">
         <value name="itemType">CONTROLS</value>
         <value name="name">TRANSFORM</value>
         <number name="ui_step_index" type="Long">5</number>
@@ -201,8 +216,59 @@
         </array>
         <array name="lookupTransformer" type="object" depth="1" javaclass="java.lang.Object">
         </array>
+        <value name="nodePathForDebug">3</value>
+        <Boolean name="hasBreakPoint">false</Boolean>
       </record>
-      <null name="/3/0"/>
+      <null name="/0/3/0"/>
+      <null name="/1"/>
+      <record name="/1/0" javaclass="com.wm.util.Values">
+        <value name="name">Slack®</value>
+        <value name="itemType">APPS</value>
+        <record name="operation" javaclass="com.wm.util.Values">
+          <value name="connectorID">com.webmethods.cloudstreams.slack_v2</value>
+          <value name="isCustom">false</value>
+          <value name="isDynamicOperation">false</value>
+          <value name="isImportedOperation">true</value>
+          <value name="nsName">wm.com_webmethods_cloudstreams_slack_v2.operations:ChatPostMessage</value>
+          <value name="operationName">ChatPostMessage</value>
+          <value name="operationType">actions</value>
+          <value name="packageName">WmSlackProvider</value>
+          <value name="projectName">project.json_xml</value>
+        </record>
+        <value name="id">com.webmethods.cloudstreams.slack_v2</value>
+        <value name="providerName">WmSlackProvider</value>
+        <value name="allowCustomOperations">true</value>
+        <value name="appType">predefined</value>
+        <Boolean name="hasAccount">true</Boolean>
+        <value name="type">REST</value>
+        <value name="version">2.1</value>
+        <value name="packageName">WmSlackProvider</value>
+        <value name="description">Slack allows you to collaborate in your team within persistent chat rooms, private groups, and direct messaging, where all the content is searchable using the Slack REST API.</value>
+        <value name="extensionName">WmSlackProviderExt</value>
+        <value name="certified">true</value>
+        <value name="registry">supported</value>
+        <value name="category">connector</value>
+        <value name="registeredDate">21/10/2025</value>
+        <Boolean name="installed">true</Boolean>
+        <Boolean name="latest">true</Boolean>
+        <Boolean name="allowDeleteApplication">false</Boolean>
+        <Boolean name="allowUpdateApplication">false</Boolean>
+        <Boolean name="serviceReferenceResolved">true</Boolean>
+        <array name="map" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
+        <array name="mapDelete" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
+        <array name="transformer" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
+        <array name="lookupTransformer" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
+        <array name="mapSet" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
+        <array name="inputMap" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
+        <array name="outputMap" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
+      </record>
     </record>
   </record>
   <value name="svc_in_validator_options">none</value>
